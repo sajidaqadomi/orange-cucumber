@@ -1,0 +1,25 @@
+{
+  "addEmployeeData": {
+    "firstName": "Mari",
+    "middleName": "Aso",
+    "lastName": "Hados",
+    "empPicture": null,
+    "employeeId": "123456"
+  },
+
+  "updateEmpolyeeJobData": {
+    "empStatusId": 3,
+    "jobCategoryId": 2,
+    "jobTitleId": 1,
+    "joinedDate": "2014-04-23",
+    "locationId": 2,
+    "subunitId": 2
+  },
+  "employeeWithLoginData": {
+    "empNumber": 0,
+    "password": "testTEST@1234",
+    "status": true,
+    "userRoleId": 2,
+    "username": "Jone"
+  }
+}
