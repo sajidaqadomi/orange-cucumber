@@ -1,0 +1,33 @@
+{
+  "vacancyData": {
+    "name": "test-v",
+    "jobTitleId": 33,
+    "employeeId": 189,
+    "numOfPositions": null,
+    "description": "lorem",
+    "status": true,
+    "isPublished": true
+  },
+  "candidatesData": {
+    "firstName": "Sami",
+    "middleName": null,
+    "lastName": "Bari",
+    "email": "mm@mm.com",
+    "contactNumber": null,
+    "keywords": null,
+    "comment": null,
+    "dateOfApplication": "2023-11-10",
+    "consentToKeepData": false,
+    "vacancyId": 12
+  },
+  "candidateStatusData": {
+    "note": null
+  },
+  "scheduleInterviewData": {
+    "interviewName": "Ahamad Abu",
+    "interviewDate": "2023-11-10",
+    "interviewTime": "01:00",
+    "note": null,
+    "interviewerEmpNumbers": [322]
+  }
+}
