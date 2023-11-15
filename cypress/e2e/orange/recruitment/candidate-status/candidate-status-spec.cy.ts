@@ -45,13 +45,20 @@ Then("The Candidate Status should be {string}", (status: any) => {
   candidateProfilePage.verifyCandidateStatus(status);
 });
 
-Then("The candidate should have the appropriate action buttons:", (actions: any) => {
-  candidateProfilePage.verifyActionBtn(actions.rawTable[0]);
-});
+Then(
+  "The candidate should have the appropriate action buttons:",
+  (actions: any) => {
+    const actionButtons = actions.rawTable[0];
+
+    candidateProfilePage.verifyActionBtn(actionButtons);
+  }
+);
 
 After(() => {
-  ApiRecruitmentHelper.deleteCandidate({ ids: [candidateData.candidateId] });
-  ApiRecruitmentHelper.deleteVacancy({ ids: [candidateData.vacancyId] });
-  ApiJobsHelper.deleteJobTitle({ ids: [candidateData.jobTitleId] });
-  ApiEmployeesHelper.deleteEmployee({ ids: [candidateData.empNumber] });
+  const { candidateId, vacancyId, jobTitleId, empNumber } = candidateData;
+
+  ApiRecruitmentHelper.deleteCandidate({ ids: [candidateId] });
+  ApiRecruitmentHelper.deleteVacancy({ ids: [vacancyId] });
+  ApiJobsHelper.deleteJobTitle({ ids: [jobTitleId] });
+  ApiEmployeesHelper.deleteEmployee({ ids: [empNumber] });
 });
