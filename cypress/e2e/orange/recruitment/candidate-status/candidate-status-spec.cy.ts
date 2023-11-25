@@ -54,7 +54,7 @@ Then(
   }
 );
 
-After(() => {
+afterEach(() => {
   const { candidateId, vacancyId, jobTitleId, empNumber } = candidateData;
 
   ApiRecruitmentHelper.deleteCandidate({ ids: [candidateId] });
