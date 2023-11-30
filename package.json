@@ -30,12 +30,11 @@
     "@shelex/cypress-allure-plugin": "^2.40.0",
     "allure-commandline": "^2.24.0",
     "rimraf": "^5.0.1"
-
   },
   "cypress-cucumber-preprocessor": {
     "stepDefinitions": [
-      "cypress/e2e/**/[filepath]/**/*.{js,ts}",
-      "cypress/e2e/**/[filepath].{js,ts}"
+      "cypress/e2e/**/[filepath]/**/*-spec.cy.{js,ts}",
+      "cypress/e2e/**/[filepath]-spec.cy.{js,ts}"
     ],
     "filterSpecs": true,
     "omitFiltered": true
